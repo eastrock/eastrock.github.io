@@ -5,7 +5,7 @@
   <subtitle><![CDATA[简单亦是最美]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://eastrock.github.io//"/>
-  <updated>2015-07-26T14:51:04.771Z</updated>
+  <updated>2015-08-06T09:45:34.356Z</updated>
   <id>https://eastrock.github.io//</id>
   
   <author>
@@ -14,6 +14,83 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hexo静态博客搭建（2）部分优化]]></title>
+    <link href="https://eastrock.github.io/2015/08/06/hello_hexo(2)/"/>
+    <id>https://eastrock.github.io/2015/08/06/hello_hexo(2)/</id>
+    <published>2015-08-06T09:45:34.356Z</published>
+    <updated>2015-08-06T09:45:34.356Z</updated>
+    <content type="html"><![CDATA[<h2 id="优化工作">优化工作</h2><h4 id="绑定域名">绑定域名</h4><p>托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建repository来做博客的自定义关于界面，注意非uersname.github.io的repo要使用gh-pages分支，而pages默认的即可直接用master分支<br>如果你对GigHub不够了解，可自行查询分支和GitHub Pages的用法。<br>如果对github给出的二级域名不满意的话，那么可以自行申请一个域名，可以在<a href="https://www.godaddy.com/" target="_blank" rel="external">狗爹（godaddy）</a> 或者 <a href="http://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册自己的域名，因为现在国内的域名已经开始要求备案，可能个人域名使用要先进行备案操作，备案操作直接按照阿里云给出的提示操作即可。</p>
+<h4 id="添加文章目录">添加文章目录</h4><p>在 Hexo 的 2.4.1 版本之后, <a href="https://github.com/tommy351" target="_blank" rel="external">tommy351</a> 给 Hexo 增加了 Table of contents 功能, 并提供了相关的使用方法 <a href="https://github.com/hexojs/hexo/issues/408" target="_blank" rel="external">TOC (Table of contents) helper #408</a>.</p>
+<p>使用方法很简单，也可以自定义样式，给大家分享个人比较简单的设定，可以自行修改代码进行优化。</p>
+<p>在主题目录下\layout_partial\article.ejs中对应位置添加如下的代码：<br>        <div class="article-entry" itemprop="articleBody"><br>             <!--文章目录--></div></p>
+<pre><code><span class="xml">    </span>&lt;%<span class="ruby"> <span class="keyword">if</span> (post.excerpt &amp;&amp; index){ </span>%&gt;<span class="xml">
+       </span>&lt;%-<span class="ruby"> post.excerpt </span>%&gt;<span class="xml">
+       </span>&lt;%<span class="ruby"> } <span class="keyword">else</span> { </span>%&gt;<span class="xml">
+     </span>&lt;%<span class="ruby"> <span class="keyword">if</span>(post.toc !== <span class="keyword">false</span>){ </span>%&gt;<span class="xml">
+       <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"toc"</span> <span class="attribute">class</span>=<span class="value">"toc-article"</span>&gt;</span>
+         <span class="tag">&lt;<span class="title">strong</span> <span class="attribute">class</span>=<span class="value">"toc-title"</span>&gt;</span>文章目录<span class="tag">&lt;/<span class="title">strong</span>&gt;</span>
+       </span>&lt;%-<span class="ruby"> toc(post.content) </span>%&gt;<span class="xml">
+       <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+     </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
+   </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
+   <span class="comment">&lt;!--End--&gt;</span>
+</span>&lt;%-<span class="ruby"> post.content </span>%&gt;<span class="xml">
+ <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span>
+</code></pre><p>上述代码加入了自己控制目录的展开与否，如果你在当前文章中部需要文章目录，那么：<br>    title: Hexo<br>    category: [Android,Hexo]<br>    tags: [hexo,blog] </p>
+<pre><code><span class="header">toc： false #设置这里值为false
+---</span>
+
+## 博客正文 ##
+</code></pre><p>在style样式文件中可以自定义样式，可以自己创建toc.styl文件通过import来关联，也可以直接在对应CSS文件中修改，附上简单的样式代码：<br>    /<em>*<br>    文章目录CSS代码
+    </em>/<br>    .toc-article {<br>      background: #eee;<br>      margin: 0 0 0 .5em;<br>      padding: 1em<br>    }</p>
+<pre><code><span class="class">.toc-article</span> <span class="tag">strong</span> {
+  <span class="tag">padding</span>: <span class="class">.3em</span> <span class="tag">0</span>
+}
+
+<span class="id">#toc</span> {
+  <span class="attribute">line-height</span>: <span class="number">1em</span>;
+  <span class="attribute">font-size</span>: .<span class="number">8em</span>;
+  <span class="tag">float</span>: <span class="tag">right</span>
+}
+
+<span class="id">#toc</span> <span class="class">.toc</span> {
+  <span class="tag">padding</span>: <span class="tag">0</span>
+}
+<span class="id">#toc</span> <span class="class">.toc</span> <span class="tag">li</span> {
+  <span class="tag">list-style-type</span>: <span class="tag">none</span>
+}
+
+<span class="id">#toc</span> <span class="tag">ol</span> {
+  <span class="tag">margin-left</span>: <span class="tag">0</span>
+}
+
+<span class="id">#toc</span> <span class="class">.toc-child</span> {
+  <span class="attribute">padding-left</span>: <span class="number">1.5em</span>
+}
+</code></pre><h3 id="给静态博客加速">给静态博客加速</h3><h4 id="优化Html/CSS/JS/Image">优化Html/CSS/JS/Image</h4><p>为了优化HTML,CSS,JS, 我们需要安装插件 <a href="https://github.com/FlashSoft/hexo-console-optimize" target="_blank" rel="external">Hexo Optimize</a>, 安装非常简单 Git Bash 进到你的hexo博客根目录安装该插件<br>    npm install hexo-console-optimize<br>利用命令 <strong>hexo optimize</strong> 或者 <strong>hexo o</strong> 即可优化资源：HTML、CSS、JS、Image.</p>
+<h4 id="CDN">CDN</h4><p>（如果对访问速度相对满意可以忽略类似操作）<br>接下来需要把 CSS, JS, Image 等静态文件利用七牛等 CDN 服务加速, 也就是 hexo o 以后生成的这类文件(优化过的). 一般来说只添加网页结构基本不变的东西, 例如 CSS 和 JS, 对于内容里面的图片文件另议. 将其上传到七牛的服务器上，同时将本地对应的代码链接改为七牛的地址。</p>
+<blockquote>
+<p>需要注意一点 jquery.fancybox.css 将会用到 fancybox 文件下的图片, 所以我们还需要把对应的图片上传到七牛, 并且保持文件夹目录</p>
+</blockquote>
+<h4 id="添加_InstantClick">添加 InstantClick</h4><p>加上 InstantClick.js 后, 通过预加载可以达到网页秒开的效果 (并没有实际提速), 具体介绍可以看这里 <a href="http://zhiqiang.org/blog/it/install-instantclick.html" target="_blank" rel="external">博客启用InstantClick</a>. </p>
+<h4 id="让多说的评论框转起来">让多说的评论框转起来</h4><p>这个个人还没有进行实现，等待域名备案结束后一并修改，可以移步<a href="http://wsgzao.github.io/post/duoshuo/" target="_blank" rel="external">博文</a>进行学习和设置~<br>V说的文章：多说自定义CSS 让你的多说评论动感起来<a href="http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html" target="_blank" rel="external">http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html</a></p>
+<p><img src="http://i.imgur.com/rvPmUYE.gif" alt="示例图片"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="优化工作">优化工作</h2><h4 id="绑定域名">绑定域名</h4><p>托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建reposit]]>
+    </summary>
+    
+      <category term="blog" scheme="https://eastrock.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://eastrock.github.io/tags/hexo/"/>
+    
+      <category term="技术学习" scheme="https://eastrock.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Hexo" scheme="https://eastrock.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hexo静态博客搭建（1）初步搭建]]></title>
@@ -64,31 +141,6 @@ git pull
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经过这段时间零零星星的折腾，个人的第一个博客算是已经有一个雏形了，在此感谢<a href="http://weibo.com/likuochung">Moon</a>学长在校时的指导，让我少折腾了很多的弯路，不过我知道目前的版本还有很多需要优化的地方，我会继续的优化，同时也会不定期的更新自己的技术学习文章或者一些生活的杂记，如果有什么好的建议或者不足，欢迎在每篇博客下面评论回复哦~(～￣▽￣)～*<br>后面我会继续学习Android和Web相关的知识，新注册的<a href="https://github.com/eastrock">Github</a>,欢迎交流~（ps：原来的git账号种种原因放弃使用~）<p><br>下面整个博客的搭建流程：</p>
 <hr>]]>
     
-    </summary>
-    
-      <category term="blog" scheme="https://eastrock.github.io/tags/blog/"/>
-    
-      <category term="hexo" scheme="https://eastrock.github.io/tags/hexo/"/>
-    
-      <category term="技术学习" scheme="https://eastrock.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="Hexo" scheme="https://eastrock.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hexo静态博客搭建（2）部分优化]]></title>
-    <link href="https://eastrock.github.io/2015/07/26/hello_hexo(2)/"/>
-    <id>https://eastrock.github.io/2015/07/26/hello_hexo(2)/</id>
-    <published>2015-07-26T15:59:57.657Z</published>
-    <updated>2015-07-26T15:48:38.505Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/QmJiH3A.jpg" alt="bolg"></p>
-<pre><code>update soon...
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://i.imgur.com/QmJiH3A.jpg" alt="bolg"></p>
-<pre><code>update soon...
-</code></pre>]]>
     </summary>
     
       <category term="blog" scheme="https://eastrock.github.io/tags/blog/"/>

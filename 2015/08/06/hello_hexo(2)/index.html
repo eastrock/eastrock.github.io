@@ -5,17 +5,17 @@
   
   <title>Hexo静态博客搭建（2）部分优化 | Eastrock</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="update soon...">
+  <meta name="description" content="优化工作绑定域名托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建repository来做博客的自定义关于界面，注意非uersname.github.io的repo要使用gh-pages分支，而pages默认的即可直接用master分支如果你对GigHub不够了解，可自行查询分支和">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo静态博客搭建（2）部分优化">
-<meta property="og:url" content="https://eastrock.github.io/2015/07/26/hello_hexo(2)/index.html">
+<meta property="og:url" content="https://eastrock.github.io/2015/08/06/hello_hexo(2)/index.html">
 <meta property="og:site_name" content="Eastrock">
-<meta property="og:description" content="update soon...">
-<meta property="og:image" content="http://i.imgur.com/QmJiH3A.jpg">
-<meta property="og:updated_time" content="2015-07-26T15:48:38.505Z">
+<meta property="og:description" content="优化工作绑定域名托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建repository来做博客的自定义关于界面，注意非uersname.github.io的repo要使用gh-pages分支，而pages默认的即可直接用master分支如果你对GigHub不够了解，可自行查询分支和">
+<meta property="og:image" content="http://i.imgur.com/rvPmUYE.gif">
+<meta property="og:updated_time" content="2015-08-06T09:45:34.356Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo静态博客搭建（2）部分优化">
-<meta name="twitter:description" content="update soon...">
+<meta name="twitter:description" content="优化工作绑定域名托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建repository来做博客的自定义关于界面，注意非uersname.github.io的repo要使用gh-pages分支，而pages默认的即可直接用master分支如果你对GigHub不够了解，可自行查询分支和">
   
   
     <link rel="icon" href="/favicon.png">
@@ -108,19 +108,85 @@
         </header>
       
       <p class="article-byline">
-        <a href="/2015/07/26/hello_hexo(2)/" class="article-date">
-  <time datetime="2015-07-26T15:59:57.657Z" itemprop="datePublished">2015-07-26</time>
+        <a href="/2015/08/06/hello_hexo(2)/" class="article-date">
+  <time datetime="2015-08-06T09:45:34.356Z" itemprop="datePublished">2015-08-06</time>
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p><img src="http://i.imgur.com/QmJiH3A.jpg" alt="bolg"></p>
-<pre><code>update soon...
-</code></pre>
+        
+             <!--文章目录-->
+
+             
+              
+                <div id="toc" class="toc-article">
+                  <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#优化工作"><span class="toc-number">1.</span> <span class="toc-text">优化工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#绑定域名"><span class="toc-number">1.0.1.</span> <span class="toc-text">绑定域名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加文章目录"><span class="toc-number">1.0.2.</span> <span class="toc-text">添加文章目录</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#给静态博客加速"><span class="toc-number">1.1.</span> <span class="toc-text">给静态博客加速</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#优化Html/CSS/JS/Image"><span class="toc-number">1.1.1.</span> <span class="toc-text">优化Html/CSS/JS/Image</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CDN"><span class="toc-number">1.1.2.</span> <span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加_InstantClick"><span class="toc-number">1.1.3.</span> <span class="toc-text">添加 InstantClick</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#让多说的评论框转起来"><span class="toc-number">1.1.4.</span> <span class="toc-text">让多说的评论框转起来</span></a></li></ol></li></ol></li></ol>
+                </div>
+              
+            
+            <!--End-->
+         <h2 id="优化工作">优化工作</h2><h4 id="绑定域名">绑定域名</h4><p>托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建repository来做博客的自定义关于界面，注意非uersname.github.io的repo要使用gh-pages分支，而pages默认的即可直接用master分支<br>如果你对GigHub不够了解，可自行查询分支和GitHub Pages的用法。<br>如果对github给出的二级域名不满意的话，那么可以自行申请一个域名，可以在<a href="https://www.godaddy.com/" target="_blank" rel="external">狗爹（godaddy）</a> 或者 <a href="http://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册自己的域名，因为现在国内的域名已经开始要求备案，可能个人域名使用要先进行备案操作，备案操作直接按照阿里云给出的提示操作即可。</p>
+<h4 id="添加文章目录">添加文章目录</h4><p>在 Hexo 的 2.4.1 版本之后, <a href="https://github.com/tommy351" target="_blank" rel="external">tommy351</a> 给 Hexo 增加了 Table of contents 功能, 并提供了相关的使用方法 <a href="https://github.com/hexojs/hexo/issues/408" target="_blank" rel="external">TOC (Table of contents) helper #408</a>.</p>
+<p>使用方法很简单，也可以自定义样式，给大家分享个人比较简单的设定，可以自行修改代码进行优化。</p>
+<p>在主题目录下\layout_partial\article.ejs中对应位置添加如下的代码：<br>        <div class="article-entry" itemprop="articleBody"><br>             <!--文章目录--></div></p>
+<pre><code><span class="xml">    </span>&lt;%<span class="ruby"> <span class="keyword">if</span> (post.excerpt &amp;&amp; index){ </span>%&gt;<span class="xml">
+       </span>&lt;%-<span class="ruby"> post.excerpt </span>%&gt;<span class="xml">
+       </span>&lt;%<span class="ruby"> } <span class="keyword">else</span> { </span>%&gt;<span class="xml">
+     </span>&lt;%<span class="ruby"> <span class="keyword">if</span>(post.toc !== <span class="keyword">false</span>){ </span>%&gt;<span class="xml">
+       <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"toc"</span> <span class="attribute">class</span>=<span class="value">"toc-article"</span>&gt;</span>
+         <span class="tag">&lt;<span class="title">strong</span> <span class="attribute">class</span>=<span class="value">"toc-title"</span>&gt;</span>文章目录<span class="tag">&lt;/<span class="title">strong</span>&gt;</span>
+       </span>&lt;%-<span class="ruby"> toc(post.content) </span>%&gt;<span class="xml">
+       <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+     </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
+   </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
+   <span class="comment">&lt;!--End--&gt;</span>
+</span>&lt;%-<span class="ruby"> post.content </span>%&gt;<span class="xml">
+ <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span>
+</code></pre><p>上述代码加入了自己控制目录的展开与否，如果你在当前文章中部需要文章目录，那么：<br>    title: Hexo<br>    category: [Android,Hexo]<br>    tags: [hexo,blog] </p>
+<pre><code><span class="header">toc： false #设置这里值为false
+---</span>
+
+## 博客正文 ##
+</code></pre><p>在style样式文件中可以自定义样式，可以自己创建toc.styl文件通过import来关联，也可以直接在对应CSS文件中修改，附上简单的样式代码：<br>    /<em>*<br>    文章目录CSS代码
+    </em>/<br>    .toc-article {<br>      background: #eee;<br>      margin: 0 0 0 .5em;<br>      padding: 1em<br>    }</p>
+<pre><code><span class="class">.toc-article</span> <span class="tag">strong</span> {
+  <span class="tag">padding</span>: <span class="class">.3em</span> <span class="tag">0</span>
+}
+
+<span class="id">#toc</span> {
+  <span class="attribute">line-height</span>: <span class="number">1em</span>;
+  <span class="attribute">font-size</span>: .<span class="number">8em</span>;
+  <span class="tag">float</span>: <span class="tag">right</span>
+}
+
+<span class="id">#toc</span> <span class="class">.toc</span> {
+  <span class="tag">padding</span>: <span class="tag">0</span>
+}
+<span class="id">#toc</span> <span class="class">.toc</span> <span class="tag">li</span> {
+  <span class="tag">list-style-type</span>: <span class="tag">none</span>
+}
+
+<span class="id">#toc</span> <span class="tag">ol</span> {
+  <span class="tag">margin-left</span>: <span class="tag">0</span>
+}
+
+<span class="id">#toc</span> <span class="class">.toc-child</span> {
+  <span class="attribute">padding-left</span>: <span class="number">1.5em</span>
+}
+</code></pre><h3 id="给静态博客加速">给静态博客加速</h3><h4 id="优化Html/CSS/JS/Image">优化Html/CSS/JS/Image</h4><p>为了优化HTML,CSS,JS, 我们需要安装插件 <a href="https://github.com/FlashSoft/hexo-console-optimize" target="_blank" rel="external">Hexo Optimize</a>, 安装非常简单 Git Bash 进到你的hexo博客根目录安装该插件<br>    npm install hexo-console-optimize<br>利用命令 <strong>hexo optimize</strong> 或者 <strong>hexo o</strong> 即可优化资源：HTML、CSS、JS、Image.</p>
+<h4 id="CDN">CDN</h4><p>（如果对访问速度相对满意可以忽略类似操作）<br>接下来需要把 CSS, JS, Image 等静态文件利用七牛等 CDN 服务加速, 也就是 hexo o 以后生成的这类文件(优化过的). 一般来说只添加网页结构基本不变的东西, 例如 CSS 和 JS, 对于内容里面的图片文件另议. 将其上传到七牛的服务器上，同时将本地对应的代码链接改为七牛的地址。</p>
+<blockquote>
+<p>需要注意一点 jquery.fancybox.css 将会用到 fancybox 文件下的图片, 所以我们还需要把对应的图片上传到七牛, 并且保持文件夹目录</p>
+</blockquote>
+<h4 id="添加_InstantClick">添加 InstantClick</h4><p>加上 InstantClick.js 后, 通过预加载可以达到网页秒开的效果 (并没有实际提速), 具体介绍可以看这里 <a href="http://zhiqiang.org/blog/it/install-instantclick.html" target="_blank" rel="external">博客启用InstantClick</a>. </p>
+<h4 id="让多说的评论框转起来">让多说的评论框转起来</h4><p>这个个人还没有进行实现，等待域名备案结束后一并修改，可以移步<a href="http://wsgzao.github.io/post/duoshuo/" target="_blank" rel="external">博文</a>进行学习和设置~<br>V说的文章：多说自定义CSS 让你的多说评论动感起来<a href="http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html" target="_blank" rel="external">http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html</a></p>
+<p><img src="http://i.imgur.com/rvPmUYE.gif" alt="示例图片"></p>
+
       </div>
       <footer class="article-footer">
-        <a data-url="https://eastrock.github.io/2015/07/26/hello_hexo(2)/" data-id="cicvoqq7o000mg8fmi5q932zv" class="article-share-link">分享到</a>
+        <a data-url="https://eastrock.github.io/2015/08/06/hello_hexo(2)/" data-id="ciczxx4xd000m1kfm7822ojvz" class="article-share-link">分享到</a>
         
-          <a href="https://eastrock.github.io/2015/07/26/hello_hexo(2)/#comments" class="article-comment-link">评论</a>
+          <a href="https://eastrock.github.io/2015/08/06/hello_hexo(2)/#comments" class="article-comment-link">评论</a>
         
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -136,7 +202,7 @@
         </div>
       -->
         <!-- 多说评论框 start -->
-      <div id="ds-thread" class="ds-thread" data-thread-key="2015/07/26/hello_hexo(2)/" data-title="Hexo静态博客搭建（2）部分优化" data-url="https://eastrock.github.io/2015/07/26/hello_hexo(2)/"></div>
+      <div id="ds-thread" class="ds-thread" data-thread-key="2015/08/06/hello_hexo(2)/" data-title="Hexo静态博客搭建（2）部分优化" data-url="https://eastrock.github.io/2015/08/06/hello_hexo(2)/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
       <script type="text/javascript">
@@ -156,20 +222,10 @@
       
 <nav id="article-nav">
   
-    <a href="/2015/07/26/hello_hexo(1)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          Hexo静态博客搭建（1）初步搭建
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
   
-  
-    <a href="/2015/07/26/life_some/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/07/26/hello_hexo(1)/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">梦进一度，年华一歌</p>
+      <p class="article-nav-title">Hexo静态博客搭建（1）初步搭建</p>
       <i class="icon" id="icon-chevron-left"></i>
     </a>
   
@@ -206,20 +262,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/07/26/hello_hexo(1)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          Hexo静态博客搭建（1）初步搭建
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
   
-  
-    <a href="/2015/07/26/life_some/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/07/26/hello_hexo(1)/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">梦进一度，年华一歌</p>
+      <p class="article-nav-title">Hexo静态博客搭建（1）初步搭建</p>
       <i class="icon" id="icon-chevron-left"></i>
     </a>
   
@@ -238,6 +284,26 @@
             
             <div class="item-thumbnail">
               
+<a href="/2015/08/06/hello_hexo(2)/" class="thumbnail">
+  
+    <span style="background-image:url(http://i.imgur.com/rvPmUYE.gif
+)" alt="Hexo静态博客搭建（2）部分优化" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术学习/">技术学习</a><i class="icon" id="icon-angle-right"></i><a class="article-category-link" href="/categories/技术学习/Hexo/">Hexo</a></p>
+              <p class="item-title"><a href="/2015/08/06/hello_hexo(2)/" class="title">Hexo静态博客搭建（2）部分优化</a></p>
+              <p class="item-date"><time datetime="2015-08-06T09:45:34.356Z" itemprop="datePublished">2015-08-06</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
 <a href="/2015/07/26/hello_hexo(1)/" class="thumbnail">
   
     <span style="background-image:url(http://i.imgur.com/M5QrVkB.png
@@ -250,26 +316,6 @@
             <div class="item-inner">
               <p class="item-category"><a class="article-category-link" href="/categories/技术学习/">技术学习</a><i class="icon" id="icon-angle-right"></i><a class="article-category-link" href="/categories/技术学习/Hexo/">Hexo</a></p>
               <p class="item-title"><a href="/2015/07/26/hello_hexo(1)/" class="title">Hexo静态博客搭建（1）初步搭建</a></p>
-              <p class="item-date"><time datetime="2015-07-26T15:59:57.657Z" itemprop="datePublished">2015-07-26</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2015/07/26/hello_hexo(2)/" class="thumbnail">
-  
-    <span style="background-image:url(http://i.imgur.com/QmJiH3A.jpg
-)" alt="Hexo静态博客搭建（2）部分优化" class="thumbnail-image"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/技术学习/">技术学习</a><i class="icon" id="icon-angle-right"></i><a class="article-category-link" href="/categories/技术学习/Hexo/">Hexo</a></p>
-              <p class="item-title"><a href="/2015/07/26/hello_hexo(2)/" class="title">Hexo静态博客搭建（2）部分优化</a></p>
               <p class="item-date"><time datetime="2015-07-26T15:59:57.657Z" itemprop="datePublished">2015-07-26</time></p>
             </div>
           </li>
@@ -333,7 +379,7 @@
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
