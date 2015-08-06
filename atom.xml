@@ -5,7 +5,7 @@
   <subtitle><![CDATA[简单亦是最美]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://eastrock.github.io//"/>
-  <updated>2015-08-06T09:45:34.356Z</updated>
+  <updated>2015-08-06T09:55:54.794Z</updated>
   <id>https://eastrock.github.io//</id>
   
   <author>
@@ -19,33 +19,55 @@
     <title><![CDATA[Hexo静态博客搭建（2）部分优化]]></title>
     <link href="https://eastrock.github.io/2015/08/06/hello_hexo(2)/"/>
     <id>https://eastrock.github.io/2015/08/06/hello_hexo(2)/</id>
-    <published>2015-08-06T09:45:34.356Z</published>
-    <updated>2015-08-06T09:45:34.356Z</updated>
+    <published>2015-08-06T09:55:54.794Z</published>
+    <updated>2015-08-06T09:55:54.794Z</updated>
     <content type="html"><![CDATA[<h2 id="优化工作">优化工作</h2><h4 id="绑定域名">绑定域名</h4><p>托管在GitHubPages上的博客都会自动绑定一个二级域名：uersname.github.io，访问该二级域名即可访问自己的博客主页，同时也可以在Github中新建repository来做博客的自定义关于界面，注意非uersname.github.io的repo要使用gh-pages分支，而pages默认的即可直接用master分支<br>如果你对GigHub不够了解，可自行查询分支和GitHub Pages的用法。<br>如果对github给出的二级域名不满意的话，那么可以自行申请一个域名，可以在<a href="https://www.godaddy.com/" target="_blank" rel="external">狗爹（godaddy）</a> 或者 <a href="http://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册自己的域名，因为现在国内的域名已经开始要求备案，可能个人域名使用要先进行备案操作，备案操作直接按照阿里云给出的提示操作即可。</p>
+<h4 id="添加RSS插件">添加RSS插件</h4><p>使用插件 hexo-generator-feed 能生成 Atom 1.0 或者 RSS 2.0 feed.<br>安装：</p>
+<pre><code>$ npm <span class="operator"><span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span>
+</code></pre><p>配置：</p>
+<pre><code><span class="attribute">feed</span>:
+    <span class="attribute">type</span>: atom
+    <span class="attribute">path</span>: atom.xml
+    <span class="attribute">limit</span>: <span class="number">20</span>
+</code></pre><p>type 表示类型, 是 atom 还是 rss2.<br>path 表示 Feed 路径<br>limit 最多多少篇最近文章</p>
 <h4 id="添加文章目录">添加文章目录</h4><p>在 Hexo 的 2.4.1 版本之后, <a href="https://github.com/tommy351" target="_blank" rel="external">tommy351</a> 给 Hexo 增加了 Table of contents 功能, 并提供了相关的使用方法 <a href="https://github.com/hexojs/hexo/issues/408" target="_blank" rel="external">TOC (Table of contents) helper #408</a>.</p>
 <p>使用方法很简单，也可以自定义样式，给大家分享个人比较简单的设定，可以自行修改代码进行优化。</p>
-<p>在主题目录下\layout_partial\article.ejs中对应位置添加如下的代码：<br>        <div class="article-entry" itemprop="articleBody"><br>             <!--文章目录--></div></p>
-<pre><code><span class="xml">    </span>&lt;%<span class="ruby"> <span class="keyword">if</span> (post.excerpt &amp;&amp; index){ </span>%&gt;<span class="xml">
-       </span>&lt;%-<span class="ruby"> post.excerpt </span>%&gt;<span class="xml">
-       </span>&lt;%<span class="ruby"> } <span class="keyword">else</span> { </span>%&gt;<span class="xml">
-     </span>&lt;%<span class="ruby"> <span class="keyword">if</span>(post.toc !== <span class="keyword">false</span>){ </span>%&gt;<span class="xml">
-       <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"toc"</span> <span class="attribute">class</span>=<span class="value">"toc-article"</span>&gt;</span>
-         <span class="tag">&lt;<span class="title">strong</span> <span class="attribute">class</span>=<span class="value">"toc-title"</span>&gt;</span>文章目录<span class="tag">&lt;/<span class="title">strong</span>&gt;</span>
-       </span>&lt;%-<span class="ruby"> toc(post.content) </span>%&gt;<span class="xml">
-       <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-     </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
-   </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
-   <span class="comment">&lt;!--End--&gt;</span>
-</span>&lt;%-<span class="ruby"> post.content </span>%&gt;<span class="xml">
- <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span>
-</code></pre><p>上述代码加入了自己控制目录的展开与否，如果你在当前文章中部需要文章目录，那么：<br>    title: Hexo<br>    category: [Android,Hexo]<br>    tags: [hexo,blog] </p>
-<pre><code><span class="header">toc： false #设置这里值为false
+<p>在主题目录下\layout_partial\article.ejs中对应位置添加如下的代码：</p>
+<pre><code><span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"article-entry"</span> <span class="attribute">itemprop</span>=<span class="value">"articleBody"</span>&gt;</span>
+     <span class="comment">&lt;!--文章目录--&gt;</span>
+
+     </span>&lt;%<span class="ruby"> <span class="keyword">if</span> (post.excerpt &amp;&amp; index){ </span>%&gt;<span class="xml">
+        </span>&lt;%-<span class="ruby"> post.excerpt </span>%&gt;<span class="xml">
+        </span>&lt;%<span class="ruby"> } <span class="keyword">else</span> { </span>%&gt;<span class="xml">
+      </span>&lt;%<span class="ruby"> <span class="keyword">if</span>(post.toc !== <span class="keyword">false</span>){ </span>%&gt;<span class="xml">
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"toc"</span> <span class="attribute">class</span>=<span class="value">"toc-article"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">strong</span> <span class="attribute">class</span>=<span class="value">"toc-title"</span>&gt;</span>文章目录<span class="tag">&lt;/<span class="title">strong</span>&gt;</span>
+        </span>&lt;%-<span class="ruby"> toc(post.content) </span>%&gt;<span class="xml">
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
+    </span>&lt;%<span class="ruby"> } </span>%&gt;<span class="xml">
+    <span class="comment">&lt;!--End--&gt;</span>
+ </span>&lt;%-<span class="ruby"> post.content </span>%&gt;<span class="xml">
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span>
+</code></pre><p>上述代码加入了自己控制目录的展开与否，如果你在当前文章中部需要文章目录，那么：</p>
+<pre><code>title: Hexo
+category: [Android,Hexo]  
+tags: [hexo,blog] 
+<span class="header">toc： false #设置这里值为false
 ---</span>
 
 ## 博客正文 ##
-</code></pre><p>在style样式文件中可以自定义样式，可以自己创建toc.styl文件通过import来关联，也可以直接在对应CSS文件中修改，附上简单的样式代码：<br>    /<em>*<br>    文章目录CSS代码
-    </em>/<br>    .toc-article {<br>      background: #eee;<br>      margin: 0 0 0 .5em;<br>      padding: 1em<br>    }</p>
-<pre><code><span class="class">.toc-article</span> <span class="tag">strong</span> {
+</code></pre><p>在style样式文件中可以自定义样式，可以自己创建toc.styl文件通过import来关联，也可以直接在对应CSS文件中修改，附上简单的样式代码：</p>
+<pre><code><span class="comment">/**
+文章目录CSS代码
+*/</span>
+<span class="class">.toc-article</span> {
+  <span class="attribute">background</span>: <span class="hexcolor">#eee</span>;
+  <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> .<span class="number">5em</span>;
+  <span class="tag">padding</span>: <span class="tag">1em</span>
+}
+
+<span class="class">.toc-article</span> <span class="tag">strong</span> {
   <span class="tag">padding</span>: <span class="class">.3em</span> <span class="tag">0</span>
 }
 
@@ -94,10 +116,10 @@
   
   <entry>
     <title><![CDATA[Hexo静态博客搭建（1）初步搭建]]></title>
-    <link href="https://eastrock.github.io/2015/07/26/hello_hexo(1)/"/>
-    <id>https://eastrock.github.io/2015/07/26/hello_hexo(1)/</id>
-    <published>2015-07-26T15:59:57.657Z</published>
-    <updated>2015-07-26T14:51:04.771Z</updated>
+    <link href="https://eastrock.github.io/2015/08/06/hello_hexo(1)/"/>
+    <id>https://eastrock.github.io/2015/08/06/hello_hexo(1)/</id>
+    <published>2015-08-06T08:34:39.028Z</published>
+    <updated>2015-08-06T08:34:39.028Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/M5QrVkB.png" alt=""></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经过这段时间零零星星的折腾，个人的第一个博客算是已经有一个雏形了，在此感谢<a href="http://weibo.com/likuochung" target="_blank" rel="external">Moon</a>学长在校时的指导，让我少折腾了很多的弯路，不过我知道目前的版本还有很多需要优化的地方，我会继续的优化，同时也会不定期的更新自己的技术学习文章或者一些生活的杂记，如果有什么好的建议或者不足，欢迎在每篇博客下面评论回复哦~(～￣▽￣)～*<br>后面我会继续学习Android和Web相关的知识，新注册的<a href="https://github.com/eastrock" target="_blank" rel="external">Github</a>,欢迎交流~（ps：原来的git账号种种原因放弃使用~）</p><p><br>下面整个博客的搭建流程：</p>
 <hr>
