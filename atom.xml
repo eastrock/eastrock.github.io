@@ -5,7 +5,7 @@
   <subtitle><![CDATA[简单亦是最美]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://eastrock.github.io//"/>
-  <updated>2015-08-06T10:12:49.212Z</updated>
+  <updated>2015-08-06T10:16:00.716Z</updated>
   <id>https://eastrock.github.io//</id>
   
   <author>
@@ -14,6 +14,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[梦进一度，年华一歌]]></title>
+    <link href="https://eastrock.github.io/2015/08/06/life_show/"/>
+    <id>https://eastrock.github.io/2015/08/06/life_show/</id>
+    <published>2015-08-06T10:16:00.716Z</published>
+    <updated>2015-08-06T10:16:00.716Z</updated>
+    <content type="html"><![CDATA[<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热的让人无法呼吸，似乎、太多的东西都积聚在了这个八月的雨里。这个季节，注定的哀伤、、、</p>
+<p>似水年华，时光微荡。</p>
+<p>若：</p>
+<p>谱出悠悠笙歌一曲，来歌颂曾经的记忆！</p>
+<p>绘得淡淡往景一幅，来记载单纯的心迹！</p>
+<p>或许，这只是奢望，一季又一季的到来，一季又一季的离去，每每站在原地回望，总是过去的美好，但时光依旧在激起圈圈的涟漪，我们都在努力，都还在继续，寻找着，寻找着难忘的画面……</p>
+<p>回眸过去，那里有你，有我，有他。。。。。。</p>
+<p>浅酌今时，此时、此景、此心或许早已变化。。。</p>
+<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热的让人无法呼吸，似乎、太多的东西都积聚在了这个八月的雨里。这个季节，注定的哀伤、、、</p>
+<p>似水年华，时光微荡。</p>
+<]]>
+    </summary>
+    
+      <category term="diary" scheme="https://eastrock.github.io/tags/diary/"/>
+    
+      <category term="life" scheme="https://eastrock.github.io/tags/life/"/>
+    
+      <category term="闲言碎语" scheme="https://eastrock.github.io/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[梦进一度，年华一歌]]></title>
+    <link href="https://eastrock.github.io/2015/08/06/life_some/"/>
+    <id>https://eastrock.github.io/2015/08/06/life_some/</id>
+    <published>2015-08-06T10:15:49.688Z</published>
+    <updated>2015-08-06T10:15:49.688Z</updated>
+    <content type="html"><![CDATA[<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热的让人无法呼吸，似乎、太多的东西都积聚在了这个八月的雨里。这个季节，注定的哀伤、、、</p>
+<p>似水年华，时光微荡。</p>
+<p>若：</p>
+<p>谱出悠悠笙歌一曲，来歌颂曾经的记忆！</p>
+<p>绘得淡淡往景一幅，来记载单纯的心迹！</p>
+<p>或许，这只是奢望，一季又一季的到来，一季又一季的离去，每每站在原地回望，总是过去的美好，但时光依旧在激起圈圈的涟漪，我们都在努力，都还在继续，寻找着，寻找着难忘的画面……</p>
+<p>回眸过去，那里有你，有我，有他。。。。。。</p>
+<p>浅酌今时，此时、此景、此心或许早已变化。。。</p>
+<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热的让人无法呼吸，似乎、太多的东西都积聚在了这个八月的雨里。这个季节，注定的哀伤、、、</p>
+<p>似水年华，时光微荡。</p>
+<]]>
+    </summary>
+    
+      <category term="diary" scheme="https://eastrock.github.io/tags/diary/"/>
+    
+      <category term="life" scheme="https://eastrock.github.io/tags/life/"/>
+    
+      <category term="随笔" scheme="https://eastrock.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hexo静态博客搭建（1）初步搭建]]></title>
@@ -172,64 +232,6 @@ tags: [hexo,blog]
       <category term="技术学习" scheme="https://eastrock.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Hexo" scheme="https://eastrock.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[梦进一度，年华一歌]]></title>
-    <link href="https://eastrock.github.io/2015/07/26/life_some/"/>
-    <id>https://eastrock.github.io/2015/07/26/life_some/</id>
-    <published>2015-07-26T15:59:23.291Z</published>
-    <updated>2015-07-26T15:59:23.291Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
-<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热的让人无法呼吸，似乎、太多的东西都积聚在了这个八月的雨里。这个季节，注定的哀伤、、、</p>
-<p>似水年华，时光微荡。</p>
-<p>若：</p>
-<p>谱出悠悠笙歌一曲，来歌颂曾经的记忆！</p>
-<p>绘得淡淡往景一幅，来记载单纯的心迹！</p>
-<p>或许，这只是奢望，一季又一季的到来，一季又一季的离去，每每站在原地回望，总是过去的美好，但时光依旧在激起圈圈的涟漪，我们都在努力，都还在继续，寻找着，寻找着难忘的画面……</p>
-<p>回眸过去，那里有你，有我，有他。。。。。。</p>
-<p>浅酌今时，此时、此景、此心或许早已变化。。。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
-<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热]]>
-    </summary>
-    
-      <category term="diary" scheme="https://eastrock.github.io/tags/diary/"/>
-    
-      <category term="life" scheme="https://eastrock.github.io/tags/life/"/>
-    
-      <category term="随笔" scheme="https://eastrock.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[梦进一度，年华一歌]]></title>
-    <link href="https://eastrock.github.io/2015/07/26/life_show/"/>
-    <id>https://eastrock.github.io/2015/07/26/life_show/</id>
-    <published>2015-07-26T15:56:50.401Z</published>
-    <updated>2015-07-26T15:56:50.401Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
-<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热的让人无法呼吸，似乎、太多的东西都积聚在了这个八月的雨里。这个季节，注定的哀伤、、、</p>
-<p>似水年华，时光微荡。</p>
-<p>若：</p>
-<p>谱出悠悠笙歌一曲，来歌颂曾经的记忆！</p>
-<p>绘得淡淡往景一幅，来记载单纯的心迹！</p>
-<p>或许，这只是奢望，一季又一季的到来，一季又一季的离去，每每站在原地回望，总是过去的美好，但时光依旧在激起圈圈的涟漪，我们都在努力，都还在继续，寻找着，寻找着难忘的画面……</p>
-<p>回眸过去，那里有你，有我，有他。。。。。。</p>
-<p>浅酌今时，此时、此景、此心或许早已变化。。。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
-<p>流年，一季的花开花落。于过往的岁月里，正对初生的朝阳，窥视落日的余光。时间，总游走在我们没有觉察的日子里，在一丝一毫的瞬间里飞逝、七月，曾炙热]]>
-    </summary>
-    
-      <category term="diary" scheme="https://eastrock.github.io/tags/diary/"/>
-    
-      <category term="life" scheme="https://eastrock.github.io/tags/life/"/>
-    
-      <category term="闲言碎语" scheme="https://eastrock.github.io/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
     
   </entry>
   
