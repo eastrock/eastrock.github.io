@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   
-  <title><![CDATA[Eastrock]]></title>
+  <title><![CDATA[Eastrock | Pages]]></title>
   <subtitle><![CDATA[简单亦是最美]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://eastrock.github.io//"/>
-  <updated>2015-09-20T05:41:03.219Z</updated>
+  <updated>2015-10-12T02:40:21.942Z</updated>
   <id>https://eastrock.github.io//</id>
   
   <author>
@@ -16,17 +16,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[浅谈随笔]]></title>
-    <link href="https://eastrock.github.io/2015/09/20/life_show/"/>
-    <id>https://eastrock.github.io/2015/09/20/life_show/</id>
-    <published>2015-09-20T05:41:03.219Z</published>
-    <updated>2015-09-20T05:41:03.219Z</updated>
-    <content type="html"><![CDATA[<p>人生，原本就是一张张白纸订成的书卷，有心的人，用心书写，满卷花香，缤纷摇曳；无意的人，匆匆走过，一片荒凉，苍白寡淡。</p>
-<h4 id="未完待续~">未完待续<del>~</del></h4><p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
+    <title><![CDATA[Android蓝牙串口助手设计与开发（与单片机交互）]]></title>
+    <link href="https://eastrock.github.io/2015/10/12/android_bluetooth_tool/"/>
+    <id>https://eastrock.github.io/2015/10/12/android_bluetooth_tool/</id>
+    <published>2015-10-12T02:40:21.942Z</published>
+    <updated>2015-10-12T02:40:21.942Z</updated>
+    <content type="html"><![CDATA[<p>该文章正在优化中，敬请期待<del>~</del><del>~</del>~~(●ˇ∀ˇ●)<br><img src="http://i.imgur.com/SClgZsN.jpg" alt="Android"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>人生，原本就是一张张白纸订成的书卷，有心的人，用心书写，满卷花香，缤纷摇曳；无意的人，匆匆走过，一片荒凉，苍白寡淡。</p>
-<h4 id="未完待续~">未完待续<del>~</del></h4><p><img src="http://i.imgur.com/12EE6F]]>
+    <![CDATA[<p>该文章正在优化中，敬请期待<del>~</del><del>~</del>~~(●ˇ∀ˇ●)<br><img src="http://i.imgur.com/SClgZsN.jpg" alt="Android"></p>
+]]>
+    </summary>
+    
+      <category term="BlueTooth" scheme="https://eastrock.github.io/tags/BlueTooth/"/>
+    
+      <category term="android" scheme="https://eastrock.github.io/tags/android/"/>
+    
+      <category term="Android" scheme="https://eastrock.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[这一路走来]]></title>
+    <link href="https://eastrock.github.io/2015/10/12/Think_in_life/"/>
+    <id>https://eastrock.github.io/2015/10/12/Think_in_life/</id>
+    <published>2015-10-12T02:36:59.544Z</published>
+    <updated>2015-10-12T02:36:59.544Z</updated>
+    <content type="html"><![CDATA[<h4 id="一路走来">一路走来</h4><p>生命就像一首从未听过的乐曲，也许你很清楚她的节拍，但曲子未终，未得其韵味。大学生活很快，快得让你尚未体会便趋于终点，但她又是美的，因为大学会让一个人改变许多，也成长许多。</p>
+<p>回望我的生活，在大一刚入学因为那个叫做信息部的地方，我接触了编程，和代码相遇相知，与HTML嬉戏，与JAVA调侃人生百态，从此踏上了一条立志用程序改变世界的道路，曾几时，也是意气风发指点苍穹，在投笔入坑之后，我便将笔尖的文字换成了代码，任凭BUG流淌，WAARNING横出，依旧坚持面不改色，不批判不骂娘，即便更新须翻墙，向天歌，壮哉我大好山河~</p>
+<p>归根结底，其实现在都是一路走来的选择，这一路唯有经历能让人成长，唯有思考能让一个人丰富。或许真的是代码敲多了，对于文章已经渐行渐远了，大学之前很喜欢写东西，用很多典故和哲理，其实现在看来当时写的文章其实很浮华，就像是一个躯壳，没有自己的灵魂，现在专门在自己的技术博客为主的网页里加这样一个分类，其实我觉得对自己也是一种回归和挑战，因为让汉字在自己的笔尖或者键盘下流淌是很享受的一个过程，让人回归自己的本真，而不是跟着这个快节奏的社会的步伐，室友现在有两个很喜欢读书，我很欣赏他们这种感觉，在这个节奏的生活里，可能也只有读书、写作和音乐能让人感受到久违的安静与纯真吧~</p>
+<p>我会继续努力去学好自己选择的技术方向，另外我也会慢慢的在这里写下我自己的随心所欲…….</p>
+<p>思维凌乱，谨慎阅赏<br>To be continue…</p>
+<p><img src="http://i.imgur.com/12EE6F3.jpg" alt="lifestyle"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h4 id="一路走来">一路走来</h4><p>生命就像一首从未听过的乐曲，也许你很清楚她的节拍，但曲子未终，未得其韵味。大学生活很快，快得让你尚未体会便趋于终点，但她又是美的，因为大学会让一个人改变许多，也成长许多。</p>
+<p>回望我的生活，在大一刚入学因为那个叫做信息]]>
     </summary>
     
       <category term="diary" scheme="https://eastrock.github.io/tags/diary/"/>
@@ -38,32 +63,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[梦进一度，年华一歌]]></title>
-    <link href="https://eastrock.github.io/2015/09/20/life_some/"/>
-    <id>https://eastrock.github.io/2015/09/20/life_some/</id>
-    <published>2015-09-20T05:39:14.734Z</published>
-    <updated>2015-09-20T05:39:14.734Z</updated>
-    <content type="html"><![CDATA[<p>该分类下文章稍后更新，敬请期待<del>~</del><del>~</del>~~(●ˇ∀ˇ●)<br><img src="http://i.imgur.com/SClgZsN.jpg" alt="Android"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>该分类下文章稍后更新，敬请期待<del>~</del><del>~</del>~~(●ˇ∀ˇ●)<br><img src="http://i.imgur.com/SClgZsN.jpg" alt="Android"></p>
-]]>
-    </summary>
-    
-      <category term="android" scheme="https://eastrock.github.io/tags/android/"/>
-    
-      <category term="as" scheme="https://eastrock.github.io/tags/as/"/>
-    
-      <category term="Android" scheme="https://eastrock.github.io/categories/Android/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[鬼斧神工的正则表达式（PHP语言）]]></title>
-    <link href="https://eastrock.github.io/2015/09/18/php_study_zhengze/"/>
-    <id>https://eastrock.github.io/2015/09/18/php_study_zhengze/</id>
-    <published>2015-09-18T15:46:51.015Z</published>
-    <updated>2015-09-18T15:46:51.015Z</updated>
+    <link href="https://eastrock.github.io/2015/09/20/php_study_zhengze/"/>
+    <id>https://eastrock.github.io/2015/09/20/php_study_zhengze/</id>
+    <published>2015-09-20T05:51:16.069Z</published>
+    <updated>2015-09-20T05:51:16.069Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/YAhICTa.jpg" alt="鬼斧神工之正则"></p>
 <h3 id="写在前面">写在前面</h3><p>正则表达式对于程序员应该算是一个必备的技能了，所以我以PHP语言为载体进行了对正则表达式的学习，也借此继续学习PHP语言，如果需要可以本文中的PHP语言翻译成其他所需的语言。<br>同时推荐学习正则表达式之前先了解一些基本的语法，基本的OOP思想，基本的MVC模式知识。</p>
 <h3 id="与正则表达式的初次邂逅">与正则表达式的初次邂逅</h3><p>对于正则表达式，可以在我们使用的很多产品中都有，比如在手机输入法/WINDOWS的文件搜索/WEB界面上对邮箱等的匹配从而判断邮箱是否正确，可以说正则表达式是无孔不入的，借用<a href="http://www.imooc.com" target="_blank" rel="external">慕课网</a>中badguy老师对正则表达式的评价：外表风骚，内功深厚！</p>
@@ -251,7 +255,7 @@
 }
 <span class="preprocessor">?&gt;</span></span>
 </code></pre><p>这个工具已经自己调试过了，如果有问题可以在下面评论交流哦~，欢迎提出改进方案(●ˇ∀ˇ●)<br>另外上述正则表达式有小伙伴有更好的改进意见的也欢迎交流~(●ˇ∀ˇ●)</p>
-<p>ps:对于正则表达式的学习暂时先告一段落了，如果有时间会结合网上的教程自己撸一个简易的Smarty模板引擎，当然只是简易的，届时会在php的分类板块下更新，欢迎小伙伴阅读~<br>   最后感谢<a href="http://www.imooc.com" target="_blank" rel="external">慕课网</a>上的相关教程和网上各位大牛的博客和文章，虽然不能一一贴出链接，但谢谢你们的分享。</p>
+<p>ps:对于正则表达式的学习暂时先告一段落了，如果有时间会结合网上的教程自己撸一个简易的Smarty模板引擎，当然只是简易的，届时会在php的分类板块下更新，欢迎小伙伴阅读~<br>   最后感谢<a href="http://www.imooc.com" target="_blank" rel="external">慕课网</a>上的相关教程和网上各位大牛的博客和文章，虽然不能一一贴出链接，但谢谢你们的分享。<br>加油~</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://i.imgur.com/YAhICTa.jpg" alt="鬼斧神工之正则"></p>
